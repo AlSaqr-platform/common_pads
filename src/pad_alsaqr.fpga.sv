@@ -64,6 +64,7 @@ module pad_alsaqr
   input  logic I,
   output logic O,
   inout  wire  PAD,
+  inout  wire  PUEN,
   input  wire  DRV,
   input  wire  SLW,
   input  wire  SMT,

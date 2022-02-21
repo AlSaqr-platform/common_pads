@@ -9,17 +9,18 @@
 // specific language governing permissions and limitations under the License.
 
 module pad_functional_pd (
-  input  logic OEN,
-  input  logic I,
-  output logic O,
-  inout  wire  PAD,
-  input  wire  DRV,
-  input  wire  SLW,
-  input  wire  SMT,
-  inout  wire  PWROK,
-  inout  wire  IOPWROK,
-  inout  wire  BIAS,
-  inout  wire  RETC 
+  input logic      OEN,
+  input logic      I,
+  output logic     O,
+  inout wire       PAD,
+  input wire [1:0] DRV,
+  input wire       PUEN,                       
+  input wire       SLW,
+  input wire       SMT,
+  inout wire       PWROK,
+  inout wire       IOPWROK,
+  inout wire       BIAS,
+  inout wire       RETC 
 );
 
 /*
@@ -50,11 +51,18 @@ module pad_functional_pd (
 endmodule
 
 module pad_functional_pu (
-  input  logic OEN,
-  input  logic I,
-  output logic O,
-  input  logic PEN,
-  inout  wire  PAD
+  input logic      OEN,
+  input logic      I,
+  output logic     O,
+  inout wire       PAD,
+  input wire [1:0] DRV,
+  input wire       PUEN,                       
+  input wire       SLW,
+  input wire       SMT,
+  inout wire       PWROK,
+  inout wire       IOPWROK,
+  inout wire       BIAS,
+  inout wire       RETC 
 );
 
 /*
@@ -85,12 +93,18 @@ module pad_functional_pu (
 endmodule
 
 module pad_functional (
-  input  logic OEN,
-  input  logic I,
-  output logic O,
-  input logic PUEN,
-  input  logic PEN,
-  inout  wire  PAD
+  input logic      OEN,
+  input logic      I,
+  output logic     O,
+  inout wire       PAD,
+  input wire [1:0] DRV,
+  input wire       PUEN,                       
+  input wire       SLW,
+  input wire       SMT,
+  inout wire       PWROK,
+  inout wire       IOPWROK,
+  inout wire       BIAS,
+  inout wire       RETC 
 );
 
 /*

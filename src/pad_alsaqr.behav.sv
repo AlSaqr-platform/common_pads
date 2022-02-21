@@ -8,7 +8,7 @@
 // CONDITIONS OF ANY KIND, either express or implied. See the License for the
 // specific language governing permissions and limitations under the License.
 
-module pad_functional_pd (
+module pad_alsaqr_pd (
   input logic      OEN,
   input logic      I,
   output logic     O,
@@ -50,7 +50,7 @@ module pad_functional_pd (
 
 endmodule
 
-module pad_functional_pu (
+module pad_alsaqr_pu (
   input logic      OEN,
   input logic      I,
   output logic     O,
@@ -92,7 +92,7 @@ module pad_functional_pu (
 
 endmodule
 
-module pad_functional (
+module pad_alsaqr (
   input logic      OEN,
   input logic      I,
   output logic     O,

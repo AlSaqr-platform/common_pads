@@ -9,7 +9,7 @@
 // specific language governing permissions and limitations under the License.
 
               
-module pad_functional_pd (
+module pad_alsaqr_pd (
   inout wire       PAD,
   input logic      I,
   output logic     O,
@@ -44,7 +44,7 @@ module pad_functional_pd (
 
 endmodule
 
-module pad_functional_pu (
+module pad_alsaqr_pu (
   inout wire       PAD,
   input logic      I,
   output logic     O,
@@ -79,7 +79,7 @@ module pad_functional_pu (
 
 endmodule
 
-module pad_functional (
+module pad_alsaqr (
   inout wire       PAD,
   input logic      I,
   output logic     O,

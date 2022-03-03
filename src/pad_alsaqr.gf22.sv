@@ -23,7 +23,7 @@ module pad_alsaqr_pd (
   inout wire       RETC 
 );
 
-   IN22FDX_GPIO18_10M3S40PI_IO_H pad (
+   IN22FDX_GPIO18_10M19S40PI_IO_H pad (
             .PAD(PAD),
             .DATA(I),
             .Y(O),
@@ -58,7 +58,7 @@ module pad_alsaqr_pu (
   inout wire       RETC 
 );
 
-   IN22FDX_GPIO18_10M3S40PI_IO_H pad (
+   IN22FDX_GPIO18_10M19S40PI_IO_H pad (
             .PAD(PAD),
             .DATA(I),
             .Y(O),
@@ -94,7 +94,7 @@ module pad_alsaqr (
   inout wire       RETC 
 );
 
-   IN22FDX_GPIO18_10M3S40PI_IO_H pad (
+   IN22FDX_GPIO18_10M19S40PI_IO_H pad (
             .PAD(PAD),
             .DATA(I),
             .Y(O),

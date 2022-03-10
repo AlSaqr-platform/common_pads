@@ -44,7 +44,7 @@ module pad_alsaqr_pd (
 
   bufif0 (PAD, I, OEN);
   buf    (O, PAD);
-  bufif0 (PAD_wi, 1'b0, PEN);
+  bufif0 (PAD_wi, 1'b0, 1'b0);
   rpmos  (PAD, PAD_wi, 1'b0);
 
 endmodule
@@ -85,7 +85,7 @@ module pad_alsaqr_pu (
 
   bufif0 (PAD, I, OEN);
   buf    (O, PAD);
-  bufif0 (PAD_wi, 1'b1, PEN);
+  bufif0 (PAD_wi, 1'b1, 1'b0);
   rpmos  (PAD, PAD_wi, 1'b0);
 
 endmodule
@@ -127,7 +127,7 @@ module pad_alsaqr (
 
   bufif0 (PAD, I, OEN);
   buf    (O, PAD);
-  bufif0 (PAD_wi, ~PUEN, PEN);
+  bufif0 (PAD_wi, ~PUEN, 1'b0);
   rpmos  (PAD, PAD_wi, 1'b0);
 
 endmodule
